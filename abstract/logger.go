@@ -1,5 +1,11 @@
 package abstract
 
+type Level int8
+
+type StdLogger interface {
+	Log(level Level, keyvals ...interface{})
+}
+
 type Logger interface {
 	Info(a ...interface{})
 	Infof(format string, a ...interface{})
