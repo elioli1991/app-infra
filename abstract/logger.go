@@ -3,7 +3,7 @@ package abstract
 type Level int8
 
 type StdLogger interface {
-	Log(level Level, keyvals ...interface{})
+	Log(level Level, keyvals ...interface{}) error
 }
 
 type Logger interface {
